@@ -1,0 +1,228 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f2f4f8;
+  min-height: 100vh;
+  padding: 30px;
+}
+
+/* HOME */
+
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.container {
+  background: white;
+  padding: 50px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px #ccc;
+}
+
+.container h1 {
+  margin-bottom: 15px;
+}
+
+.container p {
+  margin-bottom: 25px;
+}
+
+.btn,
+button {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 7px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+}
+
+button:hover,
+.btn:hover {
+  opacity: 0.85;
+}
+
+
+/* LOGIN / SIGNUP */
+
+.auth-box {
+  width: 400px;
+  max-width: 100%;
+  margin: 60px auto;
+  background: white;
+  padding: 35px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px #ccc;
+  text-align: center;
+}
+
+.auth-box h1 {
+  margin-bottom: 10px;
+}
+
+.auth-box p {
+  margin: 10px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.auth-box button {
+  width: 100%;
+  margin-top: 10px;
+}
+
+
+/* TEMPLATE */
+
+.template-container {
+  text-align: center;
+}
+
+.template-container h1 {
+  margin-bottom: 10px;
+}
+
+.templates {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.template-card {
+  background: white;
+  width: 280px;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px #ccc;
+}
+
+.template-preview {
+  height: 220px;
+  padding: 30px;
+  text-align: left;
+  margin-bottom: 15px;
+  border-radius: 8px;
+}
+
+.template-preview h2 {
+  margin-bottom: 20px;
+}
+
+.blue {
+  border-left: 8px solid #2563eb;
+}
+
+.green {
+  border-left: 8px solid #16a34a;
+}
+
+.purple {
+  border-left: 8px solid #9333ea;
+}
+
+
+/* RESUME FORM */
+
+.resume-form {
+  max-width: 600px;
+  margin: auto;
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px #ccc;
+}
+
+.resume-form h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.resume-form button {
+  width: 100%;
+  margin-top: 10px;
+}
+
+
+/* RESUME */
+
+#resumePreview {
+  max-width: 800px;
+  margin: 30px auto;
+}
+
+.resume {
+  background: white;
+  padding: 40px;
+  min-height: 700px;
+  box-shadow: 0 5px 20px #ccc;
+}
+
+.resume h1 {
+  font-size: 35px;
+  margin-bottom: 10px;
+}
+
+.resume h2 {
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+
+.resume.blue {
+  border-top: 12px solid #2563eb;
+}
+
+.resume.green {
+  border-top: 12px solid #16a34a;
+}
+
+.resume.purple {
+  border-top: 12px solid #9333ea;
+}
+
+.resume button {
+  margin-top: 30px;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+  body {
+    padding: 15px;
+  }
+
+  .auth-box {
+    margin: 30px auto;
+  }
+
+  .templates {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .template-card {
+    width: 100%;
+    max-width: 350px;
+  }
+
+}
